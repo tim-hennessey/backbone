@@ -1,0 +1,97 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#border {
+    display: block;
+    width: $banner-width;
+    height: $banner-height;
+    pointer-events: none;
+    outline: solid 1px #ccc;
+    outline-offset: -1px;
+    z-index: 999;
+}
+
+#banner {
+	background: #111;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+
+    #img1a {
+        width: 242.5px;
+        height: 125px;;
+        overflow: hidden;
+        left: 485px;
+        
+        #img1aa {
+        width: 485px;
+        height: $banner-height;
+        }
+    }
+
+    #img1b {
+        width: 242.5px;
+        height: 125px;
+        overflow: hidden;
+        top: 125px;
+        left: 485px;
+        
+        #img1bb {
+        width: 485px;
+        height: $banner-height;
+        top: -125px;
+        }
+    }
+
+    #img2a {
+        width: 242.5px;
+        height: 125px;;
+        overflow: hidden;
+        left: 727.5px;
+        
+        #img2aa {
+        width: 485px;
+        height: $banner-height;
+        left:-242.5px;
+        }
+    }
+
+    #img2b {
+        width: 242.5px;
+        height: 125px;
+        overflow: hidden;
+        top: 125px;
+        left: 727.5px;
+        
+        #img2bb {
+        width: 485px;
+        height: $banner-height;
+        top: -125px;
+        left:-242.5px;
+        }
+    }
+
+    #lockup {
+        top: 175px;
+        left: 267px;
+        scale: 1.50;
+    }
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+   
+}

@@ -1,0 +1,95 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#border {
+    display: block;
+    width: $banner-width;
+    height: $banner-height;
+    pointer-events: none;
+    outline: solid 1px #ccc;
+    outline-offset: -1px;
+    z-index: 999;
+}
+
+#banner {
+	background: #111;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+
+    #img1a {
+        width: 122px;
+        height: 45px;;
+        overflow: hidden;
+        
+        #img1aa {
+        width: 244px;
+        height: $banner-height;
+        }
+    }
+
+    #img1b {
+        width: 122px;
+        height: 45px;
+        overflow: hidden;
+        top: 45px;
+        
+        #img1bb {
+        width: 244px;
+        height: $banner-height;
+        top: -45px;
+        }
+    }
+
+    #img2a {
+        width: 122px;
+        height: 45px;;
+        overflow: hidden;
+        left: 122px;
+        
+        #img2aa {
+        width: 244px;
+        height: $banner-height;
+        left:-122px;
+        }
+    }
+
+    #img2b {
+        width: 122px;
+        height: 45px;
+        overflow: hidden;
+        top: 45px;
+        left: 122px;
+        
+        #img2bb {
+        width: 244px;
+        height: $banner-height;
+        left: -122px;
+        top: -45px;
+        }
+    }
+
+    #lockup {
+        top: 33px;
+        left: 560px;
+        scale: .88;
+    }
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+   
+}

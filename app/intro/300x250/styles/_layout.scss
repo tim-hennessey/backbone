@@ -27,9 +27,17 @@ body {
     height: $banner-height;
     opacity: 0;
 
+    #lockup {
+        top: 187px;
+        left: 117px;
+    }
+
     #img {
         top: 45px;
         left: 25px;
+        transform: translate3d(0, 0, 0.1px);
+        transform-origin: top left;
+        transform: scale(.5);
     }
 
     #button-exit {

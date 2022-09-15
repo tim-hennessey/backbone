@@ -1,0 +1,95 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#border {
+    display: block;
+    width: $banner-width;
+    height: $banner-height;
+    pointer-events: none;
+    outline: solid 1px #ccc;
+    outline-offset: -1px;
+    z-index: 999;
+}
+
+#banner {
+	background: #111;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+
+    #lockup {
+        top: 535px;
+        left: -6px;
+        scale: .93;
+    }
+
+    #img1a {
+        width: $banner-width;
+        height: 108.5px;
+        overflow: hidden;
+        
+        #img1aa {
+        width: $banner-width;
+        height: 217px;
+        overflow: hidden;
+        }
+    }
+
+    #img1b {
+        width: $banner-width;
+        top: 108.5px;
+        height: 108.5px;
+        overflow: hidden;
+        
+        #img1bb {
+        width: $banner-width;
+        top: -108.5px;
+        height: 217px;
+        overflow: hidden;
+        }
+    }
+
+    #img2a {
+        width: $banner-width;
+        height: 108.5px;
+        overflow: hidden;
+        
+        #img2aa {
+        width: $banner-width;
+        height: 217px;
+        overflow: hidden;
+        }
+    }
+
+    #img2b {
+        width: $banner-width;
+        top: 108.5px;
+        height: 108.5px;
+        overflow: hidden;
+        
+        #img2bb {
+        width: $banner-width;
+        top: -108.5px;
+        height: 217px;
+        overflow: hidden;
+        }
+    }
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+   
+}
