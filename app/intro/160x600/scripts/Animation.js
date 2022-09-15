@@ -38,11 +38,10 @@ app.Animation = (function () {
 		.from(txt4, .5, {y:"+=50", ease:Sine.easeOut}, "-=.4");
 
 		tl2.to(footer, .5, {scale:1.15, ease:Sine.easeInOut})
-		.to(footer, .2, {scale:.95, ease:Sine.easeInOut})
 		.to(footer, .2, {scale:1, ease:Sine.easeInOut})
 		.set(wb, {opacity:1})
 		.set(star, {opacity:1})
-		.to(footer, .5, {y:"-=14", ease:Sine.easeInOut})
+		.to(footer, .5, {y:"-=14", ease:Sine.easeInOut}, "+=.25")
 		.to(intro, .5, {scale:1, ease:Sine.easeInOut}, "-=.5")
 		.to(wb, .5, {y:"-=14", ease:Sine.easeOut}, "-=.5")
 		.to(star, .5, {y:"-=14", ease:Sine.easeOut}, "-=.5");
