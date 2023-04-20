@@ -16,7 +16,8 @@ app.Tracking = (function () {
 
     // --------------------------------------------------------------------------------------
     function handleExit(e) {
-        window.open(clickTag, "_blank");
+        // window.open(clickTag, "_blank");
+        window.open("https://business.walmart.com/", "_blank");
     }
 
     // --------------------------------------------------------------------------------------

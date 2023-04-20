@@ -19,17 +19,16 @@ app.Animation = (function () {
 	var tl1 = new TimelineMax();
 	var tl2 = new TimelineMax();
 	var tl3 = new TimelineMax();
-	var tl4 = new TimelineMax();
-	var tl5 = new TimelineMax();
+	
 
 	// --------------------------------------------------------------------------------------
 	// set default properties
 	function initialize() {
 		// DO NOT EDIT: reveals banner once loaded
 		t.set(banner, {opacity:1});
-		t.set(footer, {y:"+=14"});
-		t.set(wb, {y:"+=14"});
-		t.set(star, {y:"+=14", transformOrigin: "50% 50%"});
+		t.set(footer, {y:"+=14", scale:0, transformOrigin: "30% 30%"});
+		t.set(wb, {y:"+=14", opacity:0});
+		t.set(star, {y:"+=14", opacity:0, transformOrigin: "50% 50%"});
 		t.set(intro, {scale:1.5});
 
 		t.set([img1a, img1b, img2a, img2b], {perspective:800, transformStyle:"preserve-3d", transformOrigin: "50% 0%", rotationX: -180, backfaceVisibility: "hidden"});
@@ -41,24 +40,32 @@ app.Animation = (function () {
 	// Starts the animation
 	function start() {
 
-		tl1.from(txt1, .5, {y:"+=60", ease:Sine.easeOut}, "+=2.25")
-		.from(txt2, .5, {y:"+=60", ease:Sine.easeOut}, "-=.4");
-
-		tl2.to(footer, .5, {y:"-=14", ease:Sine.easeInOut}, "+=2.75")
+		tl1.to(footer, .5, {scale:1.15, ease:Sine.easeInOut})
+		.to(footer, .2, {scale:1, ease:Sine.easeInOut})
+		.set(wb, {opacity:1})
+		.set(star, {opacity:1})
+		.to(footer, .5, {y:"-=14", ease:Sine.easeInOut}, "+=.25")
 		.to(intro, .5, {scale:1, ease:Sine.easeInOut}, "-=.5")
 		.to(wb, .5, {y:"-=14", ease:Sine.easeOut}, "-=.5")
 		.to(star, .5, {y:"-=14", ease:Sine.easeOut}, "-=.5");
 
-		tl3.to(img1a, .75, {rotationX:"0", ease:Sine.easeOut})
-		.to(img1b, 1.5, {rotationX:"0", ease:Back.easeOut}, "-=.3");
+		
 
-		tl4.to(img2a, .75, {rotationX:"0", ease:Sine.easeOut}, "+=.25")
-		.to(img2b, 1.5, {rotationX:"0", ease:Back.easeOut}, "-=.3");
+		tl2.to(img1a, .75, {rotationX:"0", ease:Sine.easeOut}, "+=.75")
+		.to(img1b, 1.5, {rotationX:"0", ease:Back.easeOut}, "-=.25")
 
-		tl5.to(img1a, .75, {x:"+=300", ease:Sine.easeIn}, "+=2")
+		tl3.to(img2a, .75, {rotationX:"0", ease:Sine.easeOut},"+=1")
+		.to(img2b, 1.5, {rotationX:"0", ease:Back.easeOut}, "-=.25")
+
+		.to(img1a, .75, {x:"+=300", ease:Sine.easeIn}, "+=.5")
 		.to(img1b, .75, {x:"+=300", ease:Sine.easeIn}, "-=.75")
 		.to(img2a, .75, {x:"+=300", ease:Sine.easeIn}, "-=.75")
-		.to(img2b, .75, {x:"+=300", ease:Sine.easeIn}, "-=.75");
+		.to(img2b, .75, {x:"+=300", ease:Sine.easeIn}, "-=.75")
+
+		.from(txt1, .5, {y:"+=60", ease:Sine.easeOut}, "-=.25")
+		.from(txt2, .5, {y:"+=60", ease:Sine.easeOut}, "-=.4");
+
+		
 		
 	}
 

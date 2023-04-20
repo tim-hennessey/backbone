@@ -1,0 +1,74 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.default {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#border {
+    display: block;
+    width: $banner-width;
+    height: $banner-height;
+    pointer-events: none;
+    outline: solid 1px #ccc;
+    outline-offset: -1px;
+    z-index: 999;
+}
+
+#banner {
+	background: #041E42;
+    overflow: hidden;
+    width: $banner-width;
+    height: $banner-height;
+    opacity: 0;
+    
+    #lockup {
+        top: 545px;
+        left: 8px;
+        transform-origin: 0px 0px;
+        scale: .84;
+    }
+
+    #address {
+        // position: absolute;
+        top: 375px;
+        left: -98px;
+        transform-origin: 0px 0px;
+        scale: .87;
+    }
+
+    #img {
+        width: 100%;
+    }
+
+    #curl-comp {
+        top: 176px;
+        left: 112px;
+        width: $banner-width;
+        height: $banner-height;
+        background: #041e42;
+        transform-origin: 48px 41px;
+        
+        #curl-mask {
+            top: -200px;
+            left: 48px;
+            width: $banner-width;
+            height: $banner-height;
+            background: #041e41;
+            // background: #fff;
+        }
+    }
+
+    #button-exit {
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+   
+}
