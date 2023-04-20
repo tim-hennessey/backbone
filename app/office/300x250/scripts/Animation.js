@@ -63,7 +63,8 @@ app.Animation = (function () {
 		.to(img2b, .75, {x:"+=300", ease:Sine.easeIn}, "-=.75")
 
 		.from(txt1, .5, {y:"+=60", ease:Sine.easeOut}, "-=.25")
-		.from(txt2, .5, {y:"+=60", ease:Sine.easeOut}, "-=.4");
+		.from(txt2, .5, {y:"+=60", ease:Sine.easeOut}, "-=.4")
+		.from(txt3, .5, {y:"+=60", ease:Sine.easeOut}, "-=.4");
 
 		
 		

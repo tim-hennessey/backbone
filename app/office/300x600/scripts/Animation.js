@@ -9,6 +9,7 @@ app.Animation = (function () {
 	var wb = document.getElementById('wb');
 	var txt1 = document.getElementById('txt1');
 	var txt2 = document.getElementById('txt2');
+	var txt3 = document.getElementById('txt3');
 	
 	var img1a = document.getElementById('img1a');
 	var img1b = document.getElementById('img1b');
@@ -56,7 +57,8 @@ app.Animation = (function () {
 		.to(img2b, 1.5, {rotationX:"0", ease:Back.easeOut}, "-=.25")
 
 		tl4.from(txt1, .5, {y:"+=60", ease:Sine.easeOut}, "+=1.5")
-		.from(txt2, .5, {y:"+=60", ease:Sine.easeOut}, "-=.4");
+		.from(txt2, .5, {y:"+=60", ease:Sine.easeOut}, "-=.4")
+		.from(txt3, .5, {y:"+=60", ease:Sine.easeOut}, "-=.4");
 		
 	}
 
