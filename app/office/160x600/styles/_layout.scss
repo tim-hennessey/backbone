@@ -27,10 +27,19 @@ body {
     height: $banner-height;
     opacity: 0;
 
+    #bandage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: $banner-width;
+    background-color: #041e41;
+}
+
     #lockup {
         top: 535px;
         left: -6px;
-        scale: .93;
+        scale: .83;
     }
 
     #img1a {
